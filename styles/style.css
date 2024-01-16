@@ -2,5 +2,39 @@
 .header-section{
     padding: 5rem;
 }
-
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.header-title{
+    color: #131318;
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+.orange{
+    color: #FF5400;
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+.header-nav .nav-link:link, .nav-link:visited{
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.8rem;
+}
+.header-nav .nav-link:hover, .nav-link:active{
+    text-decoration: none;
+    color: #FF5400;
+    font-size: 1.8rem;
+}
+.header-nav-container{
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+}
 

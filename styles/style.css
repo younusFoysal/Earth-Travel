@@ -1,6 +1,56 @@
+/* All section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.section{
+    max-width: 81.25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn-primary{
+    min-width: 14rem;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    padding: 1.4rem 2.4rem;
+    background-color: #FF5400;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.section-title{
+    color: #131318;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.text-description{
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+
+
+
+
+
+
+
 /* Header Section */
 .header-section{
     padding: 4.8rem 0;
+    position: relative;
 }
 .header-container{
     display: flex;
@@ -22,12 +72,12 @@
     font-size: 3.6rem;
     font-weight: 800;
 }
-.header-nav .nav-link:link, .nav-link:visited{
+.nav-link:link, .nav-link:visited{
     text-decoration: none;
     color: #424247;
     font-size: 1.8rem;
 }
-.header-nav .nav-link:hover, .nav-link:active{
+.nav-link:hover, .nav-link:active{
     text-decoration: none;
     color: #FF5400;
     font-size: 1.8rem;
@@ -37,10 +87,6 @@
     gap: 2.4rem;
     list-style: none;
 }
-.bars{
-    display: none;
-}
-
 
 /* Banner Styles */
 .banner-section{
@@ -82,11 +128,16 @@
     align-items: center;
     gap: 2.4rem;
 }
+.banner-form select{
+    font-size: 1.6rem;
+    color: rgba(19, 19, 24, 0.5);
+}
 .banner-input{
     width: 100%;
     padding: 1.6rem 1.2rem;
     border-radius: 0.8rem;
     border: 0;
+    min-width: 12rem;
 }
 .btn-form{
     gap: 0.8rem;
@@ -98,27 +149,29 @@
     margin-top: 9.6rem;
 }
 .popular-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 6.4rem;
 }
 .popular-text{
-    max-width: 52rem;
+    /*max-width: 52rem;*/
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.6rem;
     align-items: flex-start;
     width: 100%;
     flex: 1;
 }
 .popular-img{
-    width: 100%;
-    flex: 1;
+    height: 100%;
+    max-height: 45rem;
 }
 .popular-list{
     padding-left: 3.2rem;
 }
 .popular-img img{
     width: 100%;
+    height: 100%;
 }
 
 
@@ -138,7 +191,6 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    max-width: 72rem;
 }
 .location-content{
     display: flex;
@@ -171,7 +223,7 @@
 }
 .location-content img{
     width: 100%;
-    height: 24.375rem;
+    height: 100%;
 }
 .img-text{
     color: white;
@@ -195,7 +247,7 @@
     text-align: center;
 }
 .choose-text p{
-    max-width: 64rem;
+    /*max-width: 64rem;*/
     margin-top: 1.6rem;
     margin-bottom: 3.2rem;
 }
@@ -225,9 +277,9 @@
     font-size: 2.4rem;
     font-weight: 800;
 }
-.choose-content-item p{
-    max-width: 40rem;
-}
+/*.choose-content-item p{*/
+/*    max-width: 40rem;*/
+/*}*/
 .choose-img{
     width: 4.8rem;
 }
@@ -263,10 +315,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-position: center;
+    background-size: cover;
 }
 .deals-item-box-2{
     background: url("../Images/Group-40.png"), lightgrey 50%;
     justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
 }
 .deals-item{
     display: flex;
@@ -281,6 +337,7 @@
 }
 .deals-item-top{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 2.4rem;
 }
@@ -288,6 +345,12 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    color: #FF5400;
+}
+.deals-top-item-2{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
     color: #FF5400;
 }
 .deals-top-text{
@@ -329,6 +392,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.6rem;
 }
 .video-img{
     width: 100%;
@@ -336,12 +401,12 @@
 }
 .video-title{
     color: #131318;
-    max-width: 48rem;
-    font-size: 2.4rem;
+    /*max-width: 48rem;*/
+    font-size: 4rem;
     font-weight: 800;
-    line-height: 125%;
-    margin-top: 0.8rem;
-    margin-bottom: 1.6rem;
+    line-height: 6rem;
+    /*margin-top: 0.8rem;*/
+    /*margin-bottom: 1.6rem;*/
 }
 .video-list{
     padding-left: 2.4rem;
@@ -377,12 +442,15 @@
 }
 
 .experience-content-items{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     justify-content: space-between;
     gap: 4rem;
 
+
 }
 .otro-blockquote{
+    height: 182px;
     font-size: 1.4em;
     width:100%;
     margin: 3rem 0;
@@ -532,6 +600,181 @@
 }
 
 /* Mobile Nav */
+.nav-bars-mbl{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+.icon-mbl-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333333;
+    display: none;
+}
+
+
+/* Responsive */
+
+/* Laptop and Desktop */
+@media (max-width: 992px) {
+    .deals-item{
+        width: 80%;
+    }
+    .header-title{
+        font-size: 2.4rem;
+    }
+    .header-title .orange{
+        color: #FF5400;
+        font-size: 3.6rem;
+        font-weight: 800;
+    }
+    .header-nav-container{
+        gap: 1.6rem;
+    }
+    .video-title{
+        max-width: 48rem;
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 125%;
+        margin-top: 0.8rem;
+        margin-bottom: 1.6rem;
+    }
+    .video-text{
+        gap: 0;
+    }
+
+}
+
+
+/* Tab */
+@media (max-width: 832px)  {
+    html{
+        font-size: 56.25%;
+    }
+    .banner-form-container{
+        min-width: 100%;
+    }
+    .banner-content{
+        padding: 6.4rem;
+    }
+    .icon-mbl-nav{
+        display: block;
+    }
+    .header-nav-container{
+        display: none;
+    }
+    .header-nav{
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    .nav-bars-mbl{
+        display: block;
+    }
+    .video-section{
+        margin-top: 4.8rem;
+    }
+    .deals-top-item-2{
+        display: flex;
+    }
+    .deals-item-top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+    .deals-iteml{
+        width: 100%;
+    }
+    .location-content img{
+        max-height: 30rem;
+    }
+    .video-container,
+    .newsletter-container,
+    .experience-content-items{
+        grid-template-columns: 1fr;
+    }
+    .choose-content{
+        display: flex;
+        justify-content: center;
+        gap: 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+    .destination-row-1,
+    .destination-row-2,
+    .destination-row-3{
+        grid-template-columns: 1fr;
+    }
+    .banner-form .btn-primary{
+        width: 100%;
+        justify-content: center;
+    }
+    .banner-input{
+        padding: 1.6rem 2.4rem;
+    }
+    .banner-form{
+        flex-direction: column;
+    }
+    .popular-img img{
+        max-height: 48rem;
+    }
+    .popular-container{
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    html{
+        font-size: 50%;
+    }
+    .choose-content{
+        flex-direction: column;
+    }
+    .choose-content-item{
+        width: 100%;
+    }
+    .banner-content{
+        padding: 2.4rem;
+    }
+    .banner-form-container{
+        min-width: 100%;
+    }
+    .deals-item{
+        margin-top: 9.6rem;
+    }
+    /*header{
+        width: 90%;
+        margin: auto;
+    }
+    .nav-items .nav-link{
+        display: none;
+    }
+    .header-nav .bars{
+        display: block;
+
+    }*/
+}
 
 
 

@@ -92,3 +92,49 @@
     gap: 0.8rem;
 }
 
+
+/* Popular Styles */
+.popular-section{
+    margin-top: 9.6rem;
+}
+.popular-container{
+    display: flex;
+    gap: 6.4rem;
+}
+.popular-text{
+    max-width: 52rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: flex-start;
+    width: 100%;
+    flex: 1;
+}
+.popular-img{
+    width: 100%;
+    flex: 1;
+}
+.popular-list{
+    padding-left: 3.2rem;
+}
+.popular-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

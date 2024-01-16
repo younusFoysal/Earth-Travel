@@ -1,6 +1,6 @@
 /* Header Section */
 .header-section{
-    padding: 5rem;
+    padding: 4.8rem 0;
 }
 .header-container{
     display: flex;
@@ -39,5 +39,56 @@
 }
 .bars{
     display: none;
+}
+
+
+/* Banner Styles */
+.banner-section{
+    border-radius: 1.6rem;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/banner-image.png");
+    background-position: center;
+    background-size: cover;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+    gap: 2.4rem;
+}
+.banner-title{
+    color: white;
+    font-size: 6.4rem;
+    font-weight: 800;
+}
+.banner-description{
+    max-width: 64rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: white;
+}
+
+.banner-form-container{
+    border-radius: 0.8rem;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1.6rem 2.4rem;
+}
+.banner-form{
+    max-width: 72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+.banner-input{
+    width: 100%;
+    padding: 1.6rem 1.2rem;
+    border-radius: 0.8rem;
+    border: 0;
+}
+.btn-form{
+    gap: 0.8rem;
 }
 

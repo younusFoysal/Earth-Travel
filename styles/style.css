@@ -232,5 +232,55 @@
     width: 4.8rem;
 }
 
+/* Experience style */
+.experience-content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.experience-content-text p{
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+    max-width: 65rem;
+}
 
+.experience-content-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
 
+}
+.otro-blockquote{
+    font-size: 1.4em;
+    width:100%;
+    margin: 3rem 0;
+    font-style:italic;
+    color: #555555;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid #FF5400 ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+    box-shadow: 0 4px 8px 0 rgba(255, 94, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.otro-blockquote::before{
+    content: "\201C";
+    color:#FF5400;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+
+.otro-blockquote::after{
+    content: '';
+}
+.otro-blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+}

@@ -492,7 +492,7 @@ body{
     margin-top: 9.6rem;
 }
 .newsletter-container{
-    display: flex;
+    display: grid;
     grid-template-columns: 2fr 3fr;
     align-items: stretch;
     justify-content: center;

@@ -122,19 +122,115 @@
 }
 
 
+/* Destination Styles */
+.destination-section{
+    margin-top: 9.6rem;
+}
+.destination-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+.destination-text-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 72rem;
+}
+.location-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.destination-row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+.destination-row-2{
+    display: grid;
+    grid-template-columns: 3fr 4fr 2fr;
+    gap: 2.5rem;
+}
+.destination-row-3{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2.5rem;
+}
+.img-box{
+    width: 100%;
+    position: relative;
+    /*
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+    */
+    background: linear-gradient(0deg, rgb(19 19 24 / 0%) 0%, rgb(19 19 24 / 0%) 0%), #d3d3d300 0% / cover no-repeat;
+    border-radius: 1.6rem;
+}
+.location-content img{
+    width: 100%;
+    height: 24.375rem;
+}
+.img-text{
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Why choose style */
+.choose-section{
+    margin-top: 9.6rem;
+}
+.choose-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.choose-text p{
+    max-width: 64rem;
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+.choose-content{
+    display: flex;
+    justify-content: center;
+    gap: 6.4rem;
+    margin-bottom: 3.2rem;
+}
+.choose-content-item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:1.6rem;
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.choose-content-item-blue{
+    border-radius: 0.8rem;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.choose-title{
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.choose-content-item p{
+    max-width: 40rem;
+}
+.choose-img{
+    width: 4.8rem;
+}
 
 
 

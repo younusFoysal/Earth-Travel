@@ -1,10 +1,20 @@
 
 /* Laptop and Desktop */
 @media screen and (max-width: 992px) {
-    
+
 }
 
 /* Mobile */
 @media screen and (max-width: 600px) {
+    header{
+        width: 90%;
+        margin: auto;
+    }
+    .nav-items .nav-link{
+        display: none;
+    }
+    .header-nav .bars{
+        display: block;
 
+    }
 }
